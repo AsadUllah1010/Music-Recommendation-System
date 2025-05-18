@@ -13,4 +13,15 @@ Once you have created an account at Spotify, you need to log in to your Spotify 
 <br>
 <br>
 Step 3: Create An App
-Once you have verified an email, you will see an option to create an app in your dashboard, as shown in the image below.
+Once you have verified an email, you will see an option to create an app in your dashboard, as shown in the image below. Click “Create app” and move to the next step.
+<br>
+<br>
+Step 4: App Description
+Fill in the app description. 
+<br>
+<br>
+Step 5: Copy Your Client ID and Client Secret
+After filling in the app description, you will be redirected to your id and password. If you click “View client secret”, you will see your password. Copy your credentials so that you can use them while building a Music Recommendation System using Python.
+<br>
+<br>
+I hope you have understood what a Music Recommendation System is. Now, in this section, I’ll take you through building a Music Recommendation System using Spotify API and Python. To get started with building a Music Recommendation System, we first need to have an access token. The access token serves as a temporary authorization credential, allowing the code to make authenticated requests to the Spotify API on behalf of the application. 
