@@ -30,3 +30,15 @@ After filling in the app description, you will be redirected to your id and pass
 <br>
 <br>
 I hope you have understood what a Music Recommendation System is. Now, in this section, I’ll take you through building a Music Recommendation System using Spotify API and Python. To get started with building a Music Recommendation System, we first need to have an access token. The access token serves as a temporary authorization credential, allowing the code to make authenticated requests to the Spotify API on behalf of the application. 
+
+# Feature
+Spotify API
+
+# Conclsusion
+we used a playlist ID: “37i9dQZF1DX76Wlfdnj7AP”. The code then calls the get_trending_playlist_data function to extract music data from the specified playlist using the provided access_token. The collected music data is stored in a DataFrame named music_df. Finally, the code prints the DataFrame to display the extracted music data. You can also add your playlist id here. If your playlist link is (https://open.spotify.com/playlist/37i9dQZF1DX76Wlfdnj7AP), the playlist ID is “37i9dQZF1DX76Wlfdnj7AP”, which is what you would replace with my playlist id within the above code snippet. The above function takes the release date of a music track as input, which is provided in the format ‘YYYY-MM-DD’. It then uses the datetime.strptime function from the Python datetime module to convert the release date string to a datetime object. This conversion allows us to perform arithmetic operations with dates. The function then calculates the time span between the release date of the track and the current date (today’s date) using datetime.now() – release_date. This results in a timedelta object representing the time difference between the two dates. The weighted popularity score is computed based on the time span. The formula to calculate the weight is 1 / (time_span.days + 1). The time_span.days attribute of the timedelta object gives the number of days in the time span between the release date and today. Adding 1 to the number of days ensures that the weight is never zero, even for very recent releases, as this would lead to a division by zero error. The idea behind this formula is that the weight decreases as the time span between the release date and today increases. More recent releases will have a higher weight, while older releases will have a lower weight. As a result, when combining this weighted popularity score with other factors in a recommendation system, recent tracks will have a more significant impact on the final recommendations, reflecting users’ potential interest in newer music.
+<br>
+<br>
+So, I hope you liked this article on building a Music Recommendation System using the Spotify API and Python. A Music Recommendation System is an application of Data Science that aims to assist users in discovering new and relevant musical content based on their preferences and listening behaviour.
+
+# Contributing
+If you are interested in contributing to the project, please create a fork of the repository and submit a pull request. All contributions are welcome and appreciated.
